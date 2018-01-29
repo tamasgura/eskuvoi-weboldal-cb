@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat;
+	color: #444349;
+}
+
+header {
+	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") repeat center;
+}
+
+a {
+	text-decoration: none;
+	color: #bd806e;
+}
+
+a:hover {
+	color: #eda087;
+}
+
+footer {
+	background-color: #606060;
+}
+
+.program, .questionsSection {
+	background-color: hsla(100, 0%, 0%, .6);
+}
