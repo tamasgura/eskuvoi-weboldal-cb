@@ -2,13 +2,13 @@
 	box-sizing: border-box;
 }
 
+/*  ===  BACKGROUNDS, COLORS AND TYPOGRAPHY  ===  */
+
 body {
 	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat;
 	color: #444349;
-}
-
-header {
-	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") repeat center;
+	line-height: 1.5;
+	font-size: 1.125rem;
 }
 
 a {
@@ -20,10 +20,106 @@ a:hover {
 	color: #eda087;
 }
 
-footer {
-	background-color: #606060;
+header {
+	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") no-repeat 70% center/cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+.wrapper {
+	background-color: hsla(100, 0%, 0%, .4);
+	text-align: center;
+	color: #fcfbf7;
+	font-size: 1.25rem;
+}
+
+.names {
+	color: #d2ba87;
+	font-size: 3.15rem;
+}
+
+.marriedTagline {
+	letter-spacing: .15rem;
 }
 
 .program, .questionsSection {
 	background-color: hsla(100, 0%, 0%, .6);
+	color: #d2ba87;
 }
+
+.location, .program, .questionsSection, footer {
+	font-family: "Muli", sans-serif;
+}
+
+.gifts, .contact {
+	font-family: "Libre Baskerville", serif;
+	text-align: center;
+}
+
+h1, h2 {
+	font-family:"Great Vibes", cursive;
+}
+
+h1, h2, h3 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+h3 {
+	font: 1.5rem "Libre Baskerville", serif;
+}
+
+.question {
+	font-weight: 600;
+}
+
+.program .tagline {
+	font-style: italic;
+}
+
+footer {
+	background-color: #606060;
+	color: #fcfbf7;
+	font-size: .875rem;
+	text-align: center;
+}
+
+/*  ===  PSEUDO ELEMENTS  ===  */
+
+.marriedTagline::after {
+	content: "";
+	display: block;
+	background-color: #fcfbf7;
+	width: 45%;
+	height: 1px;
+	margin: 0 auto;
+}
+
+.date::before, .date::after {
+	content: "";
+	background-color: #fcfbf7;
+	width: 1.5rem;
+	height: 1px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.locationComponent::after {
+	content: "";
+    background-color: #444349;
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+}
+
+.questionsCategory::after {
+	content: "";
+    background-color: #d2ba87;
+    display: block;
+    height: .1875rem;
+    width: 50vw;
+    margin: 1.5rem auto;
+}
+
+/*  ===  LAYOUT  ===  */

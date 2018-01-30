@@ -9,7 +9,7 @@
 	
 	<!--  CSS Reset by Eric Meyer  -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Libre+Baskerville|Muli" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 
 </head>
@@ -17,62 +17,82 @@
 <body>
 
 	<header>
-		<h1>We're getting married!</h1>
-		<h2>Zoe &amp; Alex</h2>
-		<h3>August 1, 2018</h3>
+
+		<div class="wrapper">
+			<p class="marriedTagline">We're getting married!</p>
+			<h1 class="names">Zoe &amp; Alex</h1>
+			<p class="date">August 1, 2018</p>		
+		</div>
+
 	</header>
 
 	<main>
 		<section class="locations">
 			
-			<h4>Locations</h4>
+			<h2>Locations</h2>
 			
-			<p>
+			<div class="locationComponent">
+				
+				<h3>Ceremony</h3>
+
 				<img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-ceremony.png">
-				Ceremony: <address>St. Nicholas Church, 2 Trinity Square, Budapest</address>
-			</p>
-			
-			<p>
+				<p><address>St. Nicholas Church, 2 Trinity Square, Budapest</address></p>
+
+			</div>
+
+			<div class="locationComponent">
+				
+				<h3>Photos</h3>
+				
 				<img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-photoshoot.png">
-				Photos: <address>Liberty Bastion, 23 Wisdom Road, Budapest</address>
-			</p>
-			<p>
+				<p><address>Liberty Bastion, 23 Wisdom Road, Budapest</address></p>
+
+			</div>
+
+			<div class="locationComponent">
+
+				<h3>Party</h3>
+				
 				<img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-party.png">
-				Party: <address>Heaven Lounge, 14 Fairy Street, Budapest</address>
-			
-			</p>
+				<p><address>Heaven Lounge, 14 Fairy Street, Budapest</address></p>
+		
+			</div>
+
 		</section>
 		<section class="program">
 			
-			<h4>Program</h4>
+			<h2>Program</h2>
 			
-			<p class="tagline">It's going to be somehow, that's for sure.</p>
-			<p>Times:
-				<span>13:45 – Wedding ceremony</span>
-				<span>14:30 – Photos</span>
-				<span>16:00 – Cocktails</span>
-				<span>18:00 – Dinner</span>
-				<span>22:00 – Cake</span>
-				<span>... - 4:00 – Dance until dawn</span>
-			</p>
+			<p class="tagline">"It's going to be somehow, that's for sure."</p>
+
+			<ul class="times">
+				<li>13:45 – Wedding ceremony</li>
+				<li>14:30 – Photos</li>
+				<li>16:00 – Cocktails</li>
+				<li>18:00 – Dinner</li>
+				<li>22:00 – Cake</li>
+				<li>... - 4:00 – Dance until dawn</li>
+			</ul>	
 
 		</section>
 		<section class="gifts">
 			
-			<img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-gifts.png">
-			<h4>Gifts</h4>
-			
+			<h2>Gifts</h2>
+
 			<p class="tagline">The greatest gift for us is to have you there.</p>
+			
+			<img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-gifts.png">
+			
 			<p>Please, just bring yourself and have fun with us.</p>
 		
 		</section>
 		<section class="questionsSection">
 			
-			<h4>Questions and Answers</h4>
+			<h2>Questions and Answers</h2>
 
 			<div class="questionsCategory">
 				
-				<h5>Travel and accomodations</h5>
+				<h3>Travel and accomodations</h3>
 				
 				<div class=questionsComponent>
 					<p class="question">Will there be some kind of organized transfer?</p>
@@ -93,7 +113,7 @@
 
 			<div class="questionsCategory">
 				
-				<h5>Food and festivities</h5>
+				<h3>Food and festivities</h3>
 
 				<div class=questionsComponent>
 					<p class="question">I'd like to do some kind of surprise for you guys at the party. To whom should I talk about this?</p>
@@ -114,7 +134,7 @@
 
 			<div class="questionsCategory">
 				
-				<h5>Other small stuff:</h5>
+				<h3>Other small stuff:</h3>
 
 				<div class=questionsComponent>
 					<p class="question">I have a problem / question on the wedding day. With whom can I speak?</p>
@@ -137,6 +157,8 @@
 
 		<section class="contact">
 			
+			<h2>Contact</h2>
+
 			<p>If you have any questions feel free to call / write us.</p>
 
 			<p>Phone: (Zoe) <a href="tel:+36 30 000 0000">+36 30 000 0000</a></p>
