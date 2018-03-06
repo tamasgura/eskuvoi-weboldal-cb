@@ -27,10 +27,11 @@ header {
 }
 
 .wrapper {
-	background-color: hsla(100, 0%, 0%, .4);
+	background-color: rgba(0,0,0,.4); border 1px solid red;
 	text-align: center;
 	color: #fcfbf7;
 	font-size: 1.25rem;
+	letter-spacing: .1rem;
 }
 
 .names {
@@ -47,11 +48,11 @@ header {
 	color: #d2ba87;
 }
 
-.location, .program, .questionsSection, footer {
+.locationComponent, .program, .questionsSection, footer, p, address {
 	font-family: "Muli", sans-serif;
 }
 
-.gifts, .contact {
+.gifts p, .contact p {
 	font-family: "Libre Baskerville", serif;
 	text-align: center;
 }
@@ -66,7 +67,7 @@ h1, h2, h3 {
 }
 
 h3 {
-	font: 1.5rem "Libre Baskerville", serif;
+	font: bold 1.5rem "Libre Baskerville", serif;
 }
 
 .question {
@@ -83,6 +84,9 @@ footer {
 	font-size: .875rem;
 	text-align: center;
 }
+address {
+	font-family: inherit;
+}
 
 /*  ===  PSEUDO ELEMENTS  ===  */
 
@@ -92,7 +96,7 @@ footer {
 	background-color: #fcfbf7;
 	width: 45%;
 	height: 1px;
-	margin: 0 auto;
+	margin: .4rem auto;
 }
 
 .date::before, .date::after {
@@ -102,6 +106,7 @@ footer {
 	height: 1px;
 	display: inline-block;
 	vertical-align: middle;
+	margin: 0 .5rem;
 }
 
 .locationComponent::after {
@@ -118,8 +123,67 @@ footer {
     background-color: #d2ba87;
     display: block;
     height: .1875rem;
-    width: 50vw;
+    width: 54vw;
     margin: 1.5rem auto;
 }
 
 /*  ===  LAYOUT  ===  */
+
+header .wrapper {
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	width: 100vw;
+	padding: .5rem;
+}
+
+main > section {
+	padding: 2rem .7rem;
+}
+
+h2 {
+	margin-bottom: 1.7rem;
+}
+
+h3 {
+	margin-bottom: 1.7rem;
+}
+
+img {
+	height: 8rem;
+	display: block;
+	margin: 1.7rem auto;
+}
+
+.locationComponent address {
+	display: block;
+	margin: .75rem auto;
+	text-align: center;
+	width: 75vw;
+}
+
+.locationComponent address span {
+	display: block;
+}
+
+.gifts .bringYourself {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.question {
+	margin: 1.5rem 0 .5rem;
+}
+
+.questionsSection {
+	padding-bottom: .7rem;
+}
+
+.contact p {
+	max-width: 90%;
+	margin: 1rem auto;
+}
+
+footer {
+	padding: 1.4rem 1.7rem;
+}
