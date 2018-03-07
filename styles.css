@@ -5,10 +5,14 @@
 /*  ===  BACKGROUNDS, COLORS AND TYPOGRAPHY  ===  */
 
 body {
-	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat;
+	background-color: #000;
 	color: #444349;
 	line-height: 1.5;
 	font-size: 1.125rem;
+}
+
+.pageWrapper {
+	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat;
 }
 
 a {
@@ -27,7 +31,7 @@ header {
 }
 
 .wrapper {
-	background-color: rgba(0,0,0,.4); border 1px solid red;
+	background-color: rgba(0,0,0,.4);
 	text-align: center;
 	color: #fcfbf7;
 	font-size: 1.25rem;
@@ -52,7 +56,7 @@ header {
 	font-family: "Muli", sans-serif;
 }
 
-.gifts p, .contact p {
+.gifts p, .contact p, header .wrapper p {
 	font-family: "Libre Baskerville", serif;
 	text-align: center;
 }
@@ -129,11 +133,15 @@ address {
 
 /*  ===  LAYOUT  ===  */
 
+header {
+ 	width: 100%;
+}
+
 header .wrapper {
 	position: absolute;
 	top:50%;
 	transform: translateY(-50%);
-	width: 100vw;
+	width: 100%;
 	padding: .5rem;
 }
 
@@ -156,10 +164,7 @@ img {
 }
 
 .locationComponent address {
-	display: block;
-	margin: .75rem auto;
 	text-align: center;
-	width: 75vw;
 }
 
 .locationComponent address span {
@@ -186,4 +191,79 @@ img {
 
 footer {
 	padding: 1.4rem 1.7rem;
+}
+
+/*  ===  RESPONSIVENESS  ===  */
+
+@media (min-width: 768px) {
+	
+	.pageWrapper {
+		max-width: 90rem;
+		margin: 0 auto;
+	}
+	
+	header .wrapper {
+		max-width: 60rem;
+		position: absolute;
+		left: 50%;
+		margin-left: -30rem;
+	}
+
+	.names {
+		font-size: 5rem;
+	}
+
+	header .wrapper p {
+		font-weight: bold;
+	}
+
+
+	header .marriedTagline {
+		text-transform: uppercase;
+	}
+
+	.locations {font-size:0;}
+
+	.locationComponent {
+		display: inline-block;
+		width: 33%;
+		font-size: 1.125rem;
+	}
+
+	.locationComponent:after {
+		display: none;
+	}
+
+	.program {
+		text-align: center;
+	}
+
+	.programWrapper {
+		display: inline-block;
+		margin: 0 auto;
+		text-align: left;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.questionsSection {
+		font-size: 0;
+	}
+
+	.questionsCategory {
+		vertical-align: top;
+		font-size: 1.125rem;
+		line-height: 1.4;
+		display: inline-block;
+		width: 30%;
+	}
+
+	.questionsCategory:not(:last-child) {
+		margin-right: 5%;
+	}
+
+	.questionsCategory:after {
+		display: none;
+	}
 }
